@@ -2,14 +2,18 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .left {
-    background-color: red;
+    background-image: url(img/blood.jpg);
     width: 40%;
     float: left;
     position: relative;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .right {
@@ -18,8 +22,48 @@
     float: left;
     position: relative;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .right > * {
+    padding: 20px;
+}
+
+#splash {
+    background-color: rgb(0,0,0,.2);
     padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    color: antiquewhite;
+}
+
+#intro {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#form {
+    background-color: darksalmon;
+    box-shadow: 2px 5px 5px red;
+}
+
+#input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: darksalmon;
+    margin-bottom: 10px;
+}
+
+a {
+    color: blueviolet;
 }
